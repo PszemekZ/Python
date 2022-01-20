@@ -4,7 +4,7 @@ Możesz przypuścić, że jako parametry do funkcji podawane są zawsze listy za
 Jeżeli listy są różnej długości, funkcja powinna wyświetlić napis ‘Podane listy muszą być tej samej długości’
 '''
 
-def dodajListy(a,b):
+def dodajListy(a: list ,b: list):
     if len(a)==len(b):
         print([a + b for a, b in zip(a, b)])
     else:
@@ -12,4 +12,3 @@ def dodajListy(a,b):
 
 dodajListy([1,2,3,4,5], [1,2,3,4,5]) # [2, 4, 6, 8, 10]
 dodajListy([1,2,3,4,5], [1,2,3,4]) # Podane listy muszą być tej samej długości
-
